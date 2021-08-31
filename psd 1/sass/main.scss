@@ -1,0 +1,667 @@
+/*==============================================
+================comon_code===================
+==============================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 3.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+p,
+a,
+i,
+li,
+span,
+textarea,
+input {
+    line-height: 2rem;
+    font-size: 1.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    max-width: 96rem;
+    width: 96%;
+    margin: 0 auto;
+}
+
+/*==============================================
+================header_area===================
+==============================================*/
+.header_area {
+    margin-top: 4rem;
+
+    .main_header {
+        border-bottom: .1rem solid#97455f;
+    }
+}
+
+.top_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+
+    .social {
+        width: 30rem;
+        padding: 1.4rem 0;
+
+        ul {
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-right: 2rem;
+                background: #d2d2d2;
+                height: 3rem;
+                width: 3rem;
+                line-height: 0;
+                padding: .7rem 0rem 0rem .7rem;
+                border-radius: 50%;
+
+
+                a {
+                    color: #ffffff;
+                    display: block;
+                    text-decoration: none;
+                    font-size: 1.4rem;
+                }
+
+            }
+
+            .child1:hover {
+                background: #006DC0;
+            }
+
+            .child2:hover {
+                background: #22BBF4;
+            }
+
+            .child3:hover {
+                background: #BC0E14;
+            }
+
+            .child4:hover {
+                background: #EB2F2A;
+            }
+
+            .child5:hover {
+                background: #FD7704;
+            }
+        }
+
+    }
+
+    .mini_menu {
+        width: 65rem;
+
+        ul {
+            float: right;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-left: 2rem;
+
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    color: #97455f;
+                }
+
+            }
+        }
+    }
+}
+
+/*==============================================
+================search_area===================
+==============================================*/
+.search_area {
+    height: 14rem;
+    background: #EBEBEB;
+
+    .search_inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4.5rem;
+
+        .header_search {
+            background: #EBEBEB;
+            padding: .5rem;
+
+            input[type='text'] {
+                padding: 1rem;
+                border: none;
+                border-radius: .5rem;
+                width: 25rem;
+
+
+            }
+
+            input[type='text']:active {
+                border: none;
+                outline: none;
+
+
+            }
+
+            input[type='submit'] {
+                padding: 1rem;
+                border: none;
+                border-radius: 0rem .8rem .8rem 0rem;
+                background: #98455F;
+                color: #ffffff;
+
+
+            }
+
+        }
+    }
+
+}
+
+/*==============================================
+================main_menu===================
+==============================================*/
+.main_menu {
+    background: #98455F;
+    height: 5rem;
+    border-radius: .5rem;
+    position: relative;
+    padding: 1rem;
+    z-index: 1;
+    text-align: center;
+
+    ul {
+        padding-top: .8rem;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            text-transform: uppercase;
+            padding-right: 1.5rem;
+            height: 4rem;
+            margin: 0rem .8rem;
+
+
+            &:hover .dropdown_one {
+                visibility: visible;
+                transition: all 1s;
+            }
+
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 1.7rem;
+
+                &:hover {
+                    color: #dedede;
+                }
+            }
+        }
+    }
+
+    .dropdown_one {
+        width: 18rem;
+        position: absolute;
+        top: 4rem;
+        visibility: hidden;
+        margin-left: -3rem;
+        border-radius: .3rem;
+
+
+        li {
+            display: block;
+            text-align: center;
+
+            a {
+                background: #98455F;
+                display: block;
+                padding: 1rem;
+
+                &:hover {
+                    background: black;
+                }
+
+            }
+        }
+    }
+}
+
+/*==============================================
+================slider=========================
+==============================================*/
+.slider {
+    height: 40rem;
+    margin-top: 4rem;
+
+    .slide {
+        height: 50rem;
+
+        image {
+            height: 35rem;
+        }
+
+    }
+}
+
+/*==============================================
+================tittle==========================
+==============================================*/
+.main_tittle {
+    height: 35rem;
+    position: relative;
+    margin-top: 18rem;
+
+    &::before {
+        content: "";
+        width: 96rem;
+        display: block;
+        position: absolute;
+        top: -9rem;
+        border-bottom: .4rem solid #d3d1d19d;
+    }
+
+    .tittle_header {
+        position: absolute;
+        left: 39rem;
+        top: -10rem;
+
+        h1 {
+            color: #333333;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    }
+
+    .tittle1,
+    .tittle2 {
+        display: flex;
+        margin-top: 8rem;
+
+        .tittle_logo {
+            width: 40rem;
+
+            i {
+                font-size: 6rem;
+                margin-top: 3rem;
+                color: #d2d2d2;
+                margin-left: 4rem;
+
+            }
+
+        }
+
+        h2 {
+            color: #97455f;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+            font-weight: 200;
+        }
+
+        p {
+            color: #999999;
+            line-height: 2rem;
+
+        }
+    }
+
+    .tittle2 {
+        margin-top: 4rem;
+    }
+
+}
+
+/*==============================================
+================portfolio==========================
+==============================================*/
+.portfolio {
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+
+    .portfolio_childs1 {
+        height: 20rem;
+        display: flex;
+
+        .portfolio_image {
+            img {
+
+                height: 12rem;
+                width: 12rem;
+                margin-right: 2rem;
+                background-position: center;
+                border-radius: 450%;
+            }
+
+            height: 12rem;
+            width: 12rem;
+            margin-top: 6rem;
+            margin-right: 2rem;
+        }
+
+        .portfolio_details1 {
+
+            .portfolio_tittle {
+                color: #333333;
+                margin-bottom: 5rem;
+                font-size: 3rem;
+                text-align: center;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    border-bottom: .6rem solid #ebebeb;
+                    top: .8rem;
+                    width: 15rem;
+                    left: -12rem;
+                }
+
+                &::after {
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    border-bottom: .6rem solid #ebebeb;
+                    top: .8rem;
+                    width: 20rem;
+                    left: 30rem;
+                }
+            }
+
+            #show_para {
+                display: none;
+                color: #333333;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin-bottom: 3rem;
+                color: #333333;
+            }
+
+            p {
+                width: 30rem;
+                line-height: 2rem;
+                margin-bottom: 2rem;
+                color: #999999;
+            }
+
+            a {
+                text-decoration: none;
+                color: #98455F;
+
+            }
+
+        }
+    }
+}
+
+.portfolio_childs2 {
+    height: 20rem;
+    margin-left: 8rem;
+
+    .portfolio_tittle2 {
+        font-size: 3rem;
+        color: #333333;
+        text-align: center;
+        margin-bottom: 4rem;
+        font-weight: 400;
+
+    }
+
+    .portfolio_details2 {
+        position: relative;
+
+        .portfolio_logo {
+            height: 6rem;
+            width: 6rem;
+            float: left;
+            margin-right: 2rem;
+
+            i {
+                color: #333333;
+                font-size: 5rem;
+            }
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            color: #333333;
+
+        }
+
+        a {
+            text-decoration: none;
+            margin-top: -3rem;
+            position: absolute;
+            color: #97455f;
+            top: 6rem;
+
+        }
+    }
+
+    p {
+        width: 30rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 6rem;
+        color: #999999;
+    }
+}
+
+/*==============================================
+================Contact Us===================
+==============================================*/
+.contact_area {
+    position: relative;
+    display: flex;
+    margin-top: 12rem;
+    justify-content: space-around;
+    background-color: #ebebeb;
+
+    &::before {
+        content: '';
+        border-bottom: .3rem solid #d2d2d2;
+        height: .1rem;
+        width: 100%;
+        position: absolute;
+        top: -6rem;
+    }
+
+    .contact_childs1 {
+        .contact_heading {
+            h1 {
+                color: #333333;
+                font-size: 3rem;
+                margin-bottom: 4rem;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+
+        .contact_id1 {
+            display: flex;
+
+            h1 {
+                color: #333333;
+                font-size: 2.5rem;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+
+            img {
+                height: 12rem;
+                width: 12rem;
+                margin-right: 2rem;
+            }
+
+            .id_data {
+                h2 {
+                    color: #97455f;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    width: 30rem;
+                    color: #999999;
+
+
+                }
+            }
+        }
+
+        .contact_id2 {
+            display: flex;
+            margin-top: 6rem;
+
+            img {
+                height: 12rem;
+                width: 12rem;
+                margin-right: 2rem;
+            }
+
+            .id_data {
+                h2 {
+                    color: #97455f;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    width: 30rem;
+                    color: #999999;
+                }
+            }
+        }
+
+    }
+
+    .contact_childs2 {
+        width: 45rem;
+
+        h2 {
+            color: #333333;
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+
+
+        }
+
+        ul {
+            li {
+                list-style: none;
+                color: #999999;
+                line-height: 2.3rem;
+
+                &:nth-child(4) {
+                    margin-bottom: 2rem;
+                }
+
+                &:nth-child(7) {
+                    margin-bottom: 2rem;
+
+                    a {
+                        text-decoration: none;
+                        color: #97455f;
+                    }
+                }
+
+                &:nth-child(8) {
+                    b {
+                        font-size: 1.6rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .contact_childs3 {
+        margin-left: 3rem;
+
+        h2 {
+            color: #333333;
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 2.5rem;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 1.5rem;
+            border: none;
+            border-radius: .5rem;
+            padding: .7rem;
+            width: 20rem;
+            &:nth-child(4) {
+                display: inline-block;
+                margin-left: .2rem;
+                padding: .7rem 2rem;
+                border-radius: .5rem;
+                background-color: #97455f;
+                color: #ffffff;
+                width: 13rem;
+            }
+
+        }
+        .textarea{
+            display: inline-block;
+            margin-left: .2rem;
+            padding: .7rem 2rem;
+            border-radius: .5rem;
+            color: #ffffff;
+            border: none;
+            width: 20rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+/*==============================================
+================copyright===================
+==============================================*/
+.main_copyright {
+    height: 4rem;
+    background-color: #ebebeb;
+    border-top: .2rem solid #d2d2d2;
+    margin-top: 4rem;
+}
+
+.Copyright_area {
+
+    display: flex;
+    justify-content: space-between;
+
+    .Copyright_child {
+        color: #999999;
+        margin-top: 1rem;
+
+    }
+}
